@@ -16,8 +16,11 @@ const About = () => {
           </div>
           <div style={{maxWidth: '32rem'}}>
             <p style={{color: 'var(--text-secondary)', fontSize: '1.125rem', marginBottom: '1.5rem'}}>
-              I'm a Full Stack Developer focused on building clean, efficient, and scalable applications that solve real-world problems. With a background in IoT and Backend systems, I bridge the gap between hardware data and user interfaces.
-            </p>
+  Full Stack Developer by title, <strong>problem-solver</strong> by nature.  
+  I build <strong>fast, scalable apps</strong> where <strong>backend power</strong>, <strong>smart databases</strong>, and <strong>frontend charm</strong> connect — making interfaces feel alive. ⚙️✨.   
+  <strong> Quick learner</strong> & <strong>tech explorer</strong>, always ready for new challenges. 🚀💡
+</p>
+
             <a href="#contact" className="btn-primary">
               Let's Build Something <ArrowRight size={18} />
             </a>

@@ -28,7 +28,7 @@ const Projects = () => {
         "Chat with AI chatbot for instant support"
       ],
       stack: ["React", "Flask", "OpenCV", "XGBoost", "Node.js", "MongoDB"],
-      links: { demo: "#", github: "https://github.com/rucha-code-nodes/Smart_AI_Beauty" }
+      links: { demo: "https://drive.google.com/file/d/1iG7p3g4AQfmGWvPC-f8Be-BCJMrrZZFi/view", github: "https://github.com/rucha-code-nodes/AI_Smart_Beauty" }
     },
     {
       id: 2,
@@ -51,7 +51,7 @@ const Projects = () => {
       ],
      
       stack: ["Node.js", "Express", "MongoDB", "REST API"],
-      links: { demo: "#", github: "https://github.com/rucha-code-nodes/student-management-system" }
+      links: { demo: "https://drive.google.com/file/d/1AjHdd2C_PzYZso3Y7xLnQzp2EqfoI5pK/view", github: "https://github.com/rucha-code-nodes/student-management-system" }
     },
     {
       id: 3,
@@ -69,7 +69,7 @@ const Projects = () => {
         "Curated list of movies is displayed"
       ],
       stack: ["Python", "Machine Learning", "Flask API", "Computer Vision"],
-      links: { demo: "#", github: "#" }
+      links: { demo: "https://drive.google.com/file/d/1KdNTEOj1Awj8WrMvtxP50mAbxNDwvmym/view", github: "https://github.com/rucha-code-nodes/MoodMate " }
     }
   ];
 
