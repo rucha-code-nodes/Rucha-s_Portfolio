@@ -1,0 +1,46 @@
+/* src/pages/Services.css */
+.service-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.service-card:hover {
+  border-color: #4b5563;
+}
+.accent-line {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  width: 3rem;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+.service-icon {
+  color: var(--accent-color);
+  background-color: rgba(255, 77, 36, 0.1);
+  width: fit-content;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.service-header {
+  color: var(--accent-color);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+.service-desc {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}

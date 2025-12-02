@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,94 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+
+
+/* src/App.css */
+:root {
+  --bg-color: #0a0a0a;
+  --card-bg: #151515;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --accent-color: #ff4d24;
+  --border-color: #1f2937;
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Stop scroll when modal is open */
+body.modal-open { overflow: hidden; }
+
+/* Layout Utilities */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+.btn-primary:hover {
+  background-color: #ff6a4a;
+}
+
+/* Sections General */
+.section {
+  padding: 6rem 0;
+}
+.bg-dark { background-color: #0a0a0a; }
+.bg-darker { background-color: #0f0f0f; }
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+.subtitle {
+  color: var(--accent-color);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 32rem;
+}
+
+@media (min-width: 768px) {
+  .section-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }
