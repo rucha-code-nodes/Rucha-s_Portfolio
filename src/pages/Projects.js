@@ -1,3 +1,9 @@
+
+
+
+
+
+
 // src/pages/Projects.js
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
@@ -11,67 +17,75 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   
 
-  const projects = [
-    {
-      id: 1,
-      title: "Smart AI Beauty",
-      category: "AI & React System",
-      shortDesc: "Personalized recommendations using OpenCV & XGBoost. Reduced user confusion by 50%.",
-      image: AIAssistant,
-      problem: "Users often struggle to choose the right beauty products and hairstyles that match their unique skin tone and face shape, leading to decision paralysis and dissatisfaction.",
-      solution: "Designed an AI-driven system that analyzes facial features using OpenCV and XGBoost. The application processes user images to determine skin tone and face shape, automatically generating hyper-personalized suggestions.",
-      userFlow: [
-        "User logs in and uploads a selfie",
-        "System analyzes facial geometry and skin tone",
-        "AI matches features with product database",
-        "User receives a personalized style catalog",
-        "Chat with AI chatbot for instant support"
-      ],
-      stack: ["React", "Flask", "OpenCV", "XGBoost", "Node.js", "MongoDB"],
-      links: { demo: "https://drive.google.com/file/d/1iG7p3g4AQfmGWvPC-f8Be-BCJMrrZZFi/view", github: "https://github.com/rucha-code-nodes/AI_Smart_Beauty" }
-    },
-    {
-      id: 2,
-      title: "Student Management System",
-      category: "CRUD Application",
-      shortDesc: "Backend-driven app managing records, cutting manual reporting by 40%.",
-      image: StudentManager,
-      problem: "Educational institutions faced significant delays and errors due to manual scholarship reporting and disorganized student record management using spreadsheets.",
-      solution: "Built a robust backend-driven CRUD application using Node.js and Express. It centralizes student data, automates scholarship eligibility checks, and generates reports instantly.",
-       userFlow: [
-       "User signs up or logs in.",
-  "User creates a profile.",
-  "User uploads all documents and fills in required information.",
-  "Profile is saved successfully.",
-  "Admin logs in to the dashboard.",
-  "Admin can view or delete student scholarship, academic, and placement records.",
-  "System automatically filters students based on scholarship criteria.",
-  "Admin can generate reports with a single click."
-
-      ],
-     
-      stack: ["Node.js", "Express", "MongoDB", "REST API"],
-      links: { demo: "https://drive.google.com/file/d/1AjHdd2C_PzYZso3Y7xLnQzp2EqfoI5pK/view", github: "https://github.com/rucha-code-nodes/student-management-system" }
-    },
-    {
-      id: 3,
-      title: "MovieMood",
-      category: "ML Recommender",
-      shortDesc: "Webcam-based emotion detection for movie suggestions via Python API.",
-      image: MovieMood,
-      // "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=1000",
-      problem: "Current streaming and digital platforms do not account for users’ emotional states. People experiencing stress, burnout, or low moods don’t get personalized support or recommendations to help improve their mental well-being.",
-      solution: "Developed a Machine Learning application that uses a webcam to detect the user's real-time emotion. A Python backend processes this emotion to fetch and recommend movies that match their current mood.",
-      userFlow: [
-        "User grants webcam access",
-        "ML model detects emotion (e.g., Happy, Sad)",
-        "Backend queries movie database for matching genre",
-        "Curated list of movies is displayed"
-      ],
-      stack: ["Python", "Machine Learning", "Flask API", "Computer Vision"],
-      links: { demo: "https://drive.google.com/file/d/1KdNTEOj1Awj8WrMvtxP50mAbxNDwvmym/view", github: "https://github.com/rucha-code-nodes/MoodMate " }
+ const projects = [
+  {
+    id: 1,
+    title: "Smart AI Beauty",
+    category: "AI & React System",
+    shortDesc: "AI-powered personalization using HSV, OpenCV & XGBoost. Reduced user confusion by 50%.",
+    image: AIAssistant,
+    problem: "Users struggle to identify the right beauty clothes, products or hairstyles because skin tone and face shape vary widely. This leads to confusion, trial-and-error purchases, and low satisfaction.",
+    solution: "Built an AI-driven feature analysis system that detects face shape and skin tone using OpenCV (HSV masking + feature extraction) and XGBoost classification. The platform auto-generates personalized color clothing, hairstyle & haircuts, and makeup recommendations, supported by an integrated AI chatbot for instant guidance.",
+    userFlow: [
+      "User logs in and uploads a selfie",
+      "System extracts facial geometry and skin tone using HSV + ML",
+      "AI maps detected features to recommendation database",
+      "User receives a tailored beauty and style catalog",
+      "AI chatbot assists with product explanations and queries"
+    ],
+    stack: ["React", "Flask", "OpenCV", "XGBoost", "Node.js", "MongoDB"],
+    links: {
+      demo: "https://drive.google.com/file/d/1iG7p3g4AQfmGWvPC-f8Be-BCJMrrZZFi/view",
+      github: "https://github.com/rucha-code-nodes/AI_Smart_Beauty"
     }
-  ];
+  },
+
+  {
+    id: 2,
+    title: "Student Management System",
+    category: "CRUD Application",
+    shortDesc: "Secure backend system with OTP, JWT & Cloudinary—cut manual reporting by 40%.",
+    image: StudentManager,
+    problem: "Colleges relied on Excel sheets and manual document handling, causing errors, slow scholarship processing, and difficulty tracking academic records. Data was scattered and updating profiles took unnecessary time.",
+    solution: "Developed a full stack solution using HTML, CSS, JavaScript, Node.js and MongoDB featuring secure authentication (bcrypt, OTP, JWT), modular CRUD APIs, Cloudinary-based document storage, and automated filtering for scholarship eligibility. Centralizing student data reduced manual workload and improved reporting efficiency by 40%.",
+    userFlow: [
+      "User signs up or logs in using secured authentication",
+      "User creates a profile and uploads required documents",
+      "Files are stored in Cloudinary and linked in MongoDB",
+      "Admin logs in to the dashboard",
+      "Admin views, filters, or deletes academic, scholarship, or placement records",
+      "System auto-filters students based on scholarship criteria",
+      "Admin generates one-click reports"
+    ],
+    stack: ["Node.js", "Express", "MongoDB", "REST API", "HTML5", "CSS", "JavaScript",],
+    links: {
+      demo: "https://drive.google.com/file/d/1AjHdd2C_PzYZso3Y7xLnQzp2EqfoI5pK/view",
+      github: "https://github.com/rucha-code-nodes/student-management-system"
+    }
+  },
+
+  {
+    id: 3,
+    title: "MovieMood",
+    category: "ML Recommender",
+    shortDesc: "Real-time emotion detection using webcam + ML for mood-based movie suggestions.",
+    image: MovieMood,
+    problem: "Streaming platforms recommend movies based on history—not emotions. Users who feel stressed, sad, or overwhelmed don’t receive mood-aware recommendations that support emotional well-being.",
+    solution: "Built a real-time emotion-based movie recommender using OpenCV for face detection and a MobileNetV3-based model for emotion classification. Flask processes the detected emotion and returns curated movie lists tailored to the user’s current mood.",
+    userFlow: [
+      "User grants webcam access",
+      "ML model identifies emotion (Happy, Sad, Neutral, etc.)",
+      "Backend maps emotion to predefined movie categories",
+      "Curated movie recommendations appear instantly"
+    ],
+    stack: ["Python", "MobileNetV3", "Flask API", "HTML5", "CSS", "JavaScript"],
+    links: {
+      demo: "https://drive.google.com/file/d/1KdNTEOj1Awj8WrMvtxP50mAbxNDwvmym/view",
+      github: "https://github.com/rucha-code-nodes/MoodMate"
+    }
+  }
+];
+
 
   return (
     <div id="projects" className="container">

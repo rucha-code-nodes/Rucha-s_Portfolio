@@ -8,7 +8,7 @@ import './Home.css';
 // --- Assets Imports ---
 import myImage from '../assets/mine.jpeg'; 
 // Make sure to put your actual PDF files in the src/assets folder
-import resumePdf from '../assets/RuchaNAhire.pdf'; 
+import resumePdf from '../assets/RuchaYAhire.pdf'; 
 import internshipPdf from '../assets/vvbm_Rucha.pdf'; // Replace with actual Internship PDF if different
 
 const Home = () => {
