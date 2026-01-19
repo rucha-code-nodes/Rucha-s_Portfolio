@@ -91,7 +91,7 @@ const Contact = () => {
       </div>
 
       <div className="copyright">
-        © 2025 Rucha Ahire. All rights reserved.
+        © 2026 Rucha Ahire. All rights reserved.
       </div>
     </section>
   );

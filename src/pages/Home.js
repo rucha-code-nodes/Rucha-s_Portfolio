@@ -2,13 +2,13 @@
 
 // src/pages/Home.js
 import React from 'react';
-import { Github, Linkedin, Mail, FileText, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 import './Home.css';
 
 // --- Assets Imports ---
 import myImage from '../assets/mine.jpeg'; 
 // Make sure to put your actual PDF files in the src/assets folder
-import resumePdf from '../assets/RuchaYAhire.pdf'; 
+import resumePdf from '../assets/RuchaPAhire.pdf'; 
 import internshipPdf from '../assets/vvbm_Rucha.pdf'; // Replace with actual Internship PDF if different
 
 const Home = () => {
