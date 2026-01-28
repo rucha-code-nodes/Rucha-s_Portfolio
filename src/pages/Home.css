@@ -334,30 +334,38 @@
 }
 
 /* Social Icons */
+/* Social Icons Container */
 .social-icons {
   display: flex;
   gap: 1rem;
 }
 
+/* Individual Buttons - High Visibility Mode */
 .social-link {
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;   /* Slightly larger for better visibility */
+  height: 3.5rem;
   border-radius: 50%;
-  border: 1px solid var(--border-color);
+  
+  /* MAKE IT VISIBLE: */
+  background-color: rgba(255, 255, 255, 0.08); /* Slight white background */
+  border: 1px solid rgba(255, 255, 255, 0.3);  /* Bright visible border */
+  color: #ffffff;                              /* Pure White Icon */
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-secondary);
-  transition: all 0.2s;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
+/* Hover Effect - Turns Orange/Accent */
 .social-link:hover {
+  background-color: #ff4d24;  /* Fill with your orange accent */
+  border-color: #ff4d24;
   color: white;
-  border-color: var(--accent-color);
-  background-color: rgba(255, 77, 36, 0.1);
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -10px rgba(255, 77, 36, 0.5); /* Glowing shadow */
 }
-
 /* Stats */
 .hero-stats {
   display: grid;
@@ -520,3 +528,7 @@
   color: #ff4d24;   /* Change to any color you want */
  
 }
+
+
+
+
