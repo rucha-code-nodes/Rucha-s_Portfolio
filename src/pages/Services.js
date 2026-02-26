@@ -1,6 +1,6 @@
 // src/pages/Services.js
 import React from 'react';
-import { ArrowRight, Code, Server, Cpu } from 'lucide-react';
+import { ArrowRight, Code, Server, Cpu, Layers } from 'lucide-react';
 import './Services.css';
 
 const Services = () => {
@@ -38,6 +38,12 @@ const Services = () => {
             header="SQL & NoSQL"
             desc="Designing, managing, and querying databases. Skilled in MySQL, MongoDB, and optimizing data workflows." 
             icon={<Cpu size={24} />}
+          />
+          <ServiceCard 
+            title="DevOps & Deployment" 
+            header="Docker & CI/CD"
+            desc="Containerizing applications with Docker and automating testing and deployment using CI/CD pipelines for seamless delivery." 
+            icon={<Layers size={24} />}
           />
         </div>
       </div>

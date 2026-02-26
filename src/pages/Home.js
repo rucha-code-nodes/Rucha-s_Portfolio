@@ -67,6 +67,7 @@ Engineering scalable digital infrastructure with pixel-perfect precision. I buil
             <HeroStat number="02" title="Frontend Design" desc="React, HTML5, CSS3" />
             <HeroStat number="03" title="Database Management" desc="MySQL, MongoDB, Redis" />
             <HeroStat number="04" title="AI / ML Integration" desc="Intelligent features & Models" />
+            <HeroStat number="05" title="DevOps & Deployment" desc="Docker, CI/CD Pipelines" />
           </div>
         </div>
       </section>
